@@ -1,19 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
 
     int n;
-    cin>>n;
-    bool prime=true;
-    for(int i=2;i<n;i++){
-        if(n%i==0){
-            prime=false;
-            cout<<"not prime"<<endl;
+    cin >> n;
+    bool prime = true;
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            prime = false;
+            cout << "not prime" << endl;
             break;
         }
-
     }
-    if(prime)
-        cout<<"prime"<<endl;
+    if (prime)
+        cout << "prime" << endl;
     return 0;
 }

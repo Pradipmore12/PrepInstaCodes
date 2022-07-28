@@ -1,19 +1,24 @@
 /*leap year*/
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int year;
-    cin>>year;
-    if(year%4==0){
-        if(year%100==0){
-            if(year%400==0){
-                cout<<"leap year"<<endl;
+    cin >> year;
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0)
+            {
+                cout << "leap year" << endl;
             }
             else
-            cout<<"not leap year"<<endl;
+                cout << "not leap year" << endl;
         }
-        else{
-            cout<<"leap year"<<endl;
+        else
+        {
+            cout << "leap year" << endl;
         }
     }
     return 0;
